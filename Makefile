@@ -8,4 +8,4 @@ play:
 	./main
 
 clean:
-	rm -f template
+	rm -f main
