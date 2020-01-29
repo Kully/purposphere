@@ -1,5 +1,7 @@
 #include "lib.h"
 
+// #define RED = 0xffff0000;
+
 int main(void)
 {
     setup(80, 80);
@@ -10,8 +12,7 @@ int main(void)
         clear();
         
 
-        
-
+        line(5, 6, 60, 70, 0xffff0000);
 
         unlock();
         delay(15);

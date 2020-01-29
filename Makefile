@@ -1,7 +1,11 @@
-FLAGS = -lSDL2 -lm -Og -g #--sanitize=address
+FLAGS = -lSDL2 -lm -Og -g
 
 all:
-	gcc template.c lib.c $(FLAGS) -o template
+	gcc main.c lib.c $(FLAGS) -o main
+
+play:
+	gcc main.c lib.c $(FLAGS) -o main
+	./main
 
 clean:
 	rm -f template
