@@ -108,6 +108,14 @@ void line(int x0, int y0, int x1, int y1, uint32_t pixel)
     }
 }
 
+float distance(int x0, int y0, int x1, int y1)
+{
+    int dx = abs(x1 - x0);
+    int dy = abs(y1 - y0);
+
+    return sqrt(pow(dx, 2) + pow(dy, 2));
+}
+
 void circle(int xm, int ym, int r, uint32_t pixel)
 {
     int x = -r;

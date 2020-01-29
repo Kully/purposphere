@@ -3,6 +3,7 @@
 #include "stdio.h"
 
 // colors
+#define BLACK 0x0
 #define RED 0xffff0000
 #define ORANGE 0xffffa500
 #define GREEN 0xff00ff00
@@ -33,7 +34,7 @@ int main(void)
         float y1 = (yres/2 + radius*cos(n+(2*M_PI)/3));
 
         float x2 = (xres/2 + radius*sin(n+(4*M_PI)/3));
-        float y2 = (yres/2 + radius*cos(n+(4*M_PI)/3));
+        float y2 = (yres/2 + radius*cos(n+(4*M_PI)/3)); 
 
         triangle(x0, y0, x1, y1, x2, y2, TEAL);
 

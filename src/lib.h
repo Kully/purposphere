@@ -32,6 +32,9 @@ void put(int x, int y, uint32_t pixel);
 // DRAWS A LINE IN VIDEO MEMORY
 void line(int x0, int y0, int x1, int y1, uint32_t pixel);
 
+// PYTHAGOREAN DISTANCE BETWEEN TWO POINTS
+float distance(int x0, int y0, int x1, int y1);
+
 // DRAWS A CIRCLE OUTLINE IN VIDEO MEMORY
 void circle(int xm, int ym, int r, uint32_t pixel);
 
