@@ -24,7 +24,8 @@ int main(void)
         lock();
         clear(0x0);
 
-        int radius = 5 + 35*(pow(sin(n/4), 2));
+        int radius = 5 + 35*(pow(sin(uptime()/4), 2));
+        float n = 2*uptime();
         float x0 = (xres/2 + radius*sin(n));
         float y0 = (yres/2 + radius*cos(n));
 
@@ -36,7 +37,6 @@ int main(void)
 
         triangle(x0, y0, x1, y1, x2, y2, TEAL);
 
-        n += 0.04;
         unlock();
         delay(15);
     }
