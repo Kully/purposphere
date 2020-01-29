@@ -166,25 +166,27 @@ void filled_rect(int x0, int y0, int x1, int y1, uint32_t pixel)
         put(x, y, pixel);
 }
 
-void draw_triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t pixel)
+void triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t pixel)
 {
     line(x0, y0, x1, y1, pixel);
     line(x1, y1, x2, y2, pixel);
     line(x2, y2, x0, y0, pixel);
 }
 
-void clear(void)
+void filled_triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t pixel)
 {
-    for(int x = 0; x < xres; x++)
-    for(int y = 0; y < yres; y++)
-        put(x, y, 0x0);
+    line(x0, y0, x1, y1, pixel);
+    line(x1, y1, x2, y2, pixel);
+    line(x2, y2, x0, y0, pixel);
+
+    // NOT COMPLETE
 }
 
-void clear_with_color(uint32_t color)
+void clear(uint32_t pixel)
 {
     for(int x = 0; x < xres; x++)
     for(int y = 0; y < yres; y++)
-        put(x, y, color);
+        put(x, y, pixel);
 }
 
 bool end(void)

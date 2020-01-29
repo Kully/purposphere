@@ -22,7 +22,7 @@ int main(void)
     while(!end())
     {
         lock();
-        clear();
+        clear(0x0);
 
         int radius = 5 + 35*(pow(sin(n/4), 2));
         float x0 = (xres/2 + radius*sin(n));
@@ -34,7 +34,7 @@ int main(void)
         float x2 = (xres/2 + radius*sin(n+(4*M_PI)/3));
         float y2 = (yres/2 + radius*cos(n+(4*M_PI)/3));
 
-        draw_triangle(x0, y0, x1, y1, x2, y2, TEAL);
+        triangle(x0, y0, x1, y1, x2, y2, TEAL);
 
         n += 0.04;
         unlock();

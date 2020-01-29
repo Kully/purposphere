@@ -42,13 +42,10 @@ void filled_circle(int x0, int y0, int radius, uint32_t pixel);
 void filled_rect(int x0, int y0, int x1, int y1, uint32_t pixel);
 
 // DRAWS A TRIANGLE IN VIDEO MEMORY
-void draw_triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t pixel);
+void triangle(int x0, int y0, int x1, int y1, int x2, int y2, uint32_t pixel);
 
 // CLEARS VIDEO MEMORY
-void clear(void);
-
-// CLEARS VIDEO MEMORY WITH SPECIFIED COLOR
-void clear_with_color(uint32_t color);
+void clear(uint32_t pixel);
 
 // RETURNS TRUE IF ESCAPE OR END KEYS WERE PUSHED
 bool end(void);
