@@ -8,7 +8,11 @@ int main(void)
     {
         lock();
         clear();
-        /* CODE GOES BETWEEN CLEAR AND UNLOCK*/
+        
+
+        
+
+
         unlock();
         delay(15);
     }

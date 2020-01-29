@@ -22,7 +22,7 @@ void setup(int _xres, int _yres)
     xres = _xres;
     yres = _yres;
     window = SDL_CreateWindow(
-            "TWEETCART",
+            "PURPOSPHERE",
             SDL_WINDOWPOS_UNDEFINED,
             SDL_WINDOWPOS_UNDEFINED,
             xres,
