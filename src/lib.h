@@ -4,6 +4,7 @@
 #include <stdbool.h>
 
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 // CREATES A WINDOW WITH SPECIFIED X AND Y RESOLUTION
 void setup(int _xres, int _yres);
@@ -32,8 +33,8 @@ void put(int x, int y, uint32_t pixel);
 // DRAWS A LINE IN VIDEO MEMORY
 void line(int x0, int y0, int x1, int y1, uint32_t pixel);
 
-// PYTHAGOREAN DISTANCE BETWEEN TWO POINTS
-float distance(int x0, int y0, int x1, int y1);
+// PYTHAGOREAN DISTANCE BETWEEN TWO FLOATING POINTS
+double distance(double x0, double y0, double x1, double y1);
 
 // DRAWS A CIRCLE OUTLINE IN VIDEO MEMORY
 void circle(int xm, int ym, int r, uint32_t pixel);

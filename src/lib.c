@@ -108,10 +108,10 @@ void line(int x0, int y0, int x1, int y1, uint32_t pixel)
     }
 }
 
-float distance(int x0, int y0, int x1, int y1)
+double distance(double x0, double y0, double x1, double y1)
 {
-    int dx = abs(x1 - x0);
-    int dy = abs(y1 - y0);
+    double dx = fabs(x1 - x0);
+    double dy = fabs(y1 - y0);
 
     return sqrt(pow(dx, 2) + pow(dy, 2));
 }
